@@ -138,38 +138,44 @@ const AllChars = (props) => {
           <h1>PAGE:{currentPage}/42</h1>
         </div>
         <div className={estilos.buttonsFav}>
-          <button disabled={currentPage <= 5} onClick={handlePrevFivePages}>
-            {arrowLeft}
-          </button>
-          <button disabled={currentPage === 1} onClick={handlePrevPage}>
-            {backwardIcon}
-          </button>
-          <button disabled={currentPage === 42} onClick={handleNextPage}>
-            {forwardIcon}
-          </button>
-          <button disabled={currentPage >= 38} onClick={handleNextFivePages}>
-            {arrowRight}
-          </button>
+          <div className={estilos.buttonPages}>
+            <button disabled={currentPage <= 5} onClick={handlePrevFivePages}>
+              {arrowLeft}
+            </button>
+            <button disabled={currentPage === 1} onClick={handlePrevPage}>
+              {backwardIcon}
+            </button>
+            <button disabled={currentPage === 42} onClick={handleNextPage}>
+              {forwardIcon}
+            </button>
+            <button disabled={currentPage >= 38} onClick={handleNextFivePages}>
+              {arrowRight}
+            </button>
+          </div>
           <button onClick={handleOrder}>
-            <h3>ORDENAR <br /> ALFABETICAMENTE</h3>
+            <h3>
+              ORDENAR <br /> ALFABETICAMENTE
+            </h3>
           </button>
         </div>
       </div>
       <div className={estilos.eachCharacter}>{characterCards}</div>
       <div className={estilos.buttonsFav}>
-        <button disabled={currentPage <= 5} onClick={handlePrevFivePages}>
-          {arrowLeft}
-        </button>
-        <button disabled={currentPage === 1} onClick={handlePrevPage}>
-          {backwardIcon}
-        </button>
-        <button disabled={currentPage === 42} onClick={handleNextPage}>
-          {forwardIcon}
-        </button>
-        <button disabled={currentPage >= 38} onClick={handleNextFivePages}>
-          {arrowRight}
-        </button>
-      </div>
+          <div className={estilos.buttonPages}>
+            <button disabled={currentPage <= 5} onClick={handlePrevFivePages}>
+              {arrowLeft}
+            </button>
+            <button disabled={currentPage === 1} onClick={handlePrevPage}>
+              {backwardIcon}
+            </button>
+            <button disabled={currentPage === 42} onClick={handleNextPage}>
+              {forwardIcon}
+            </button>
+            <button disabled={currentPage >= 38} onClick={handleNextFivePages}>
+              {arrowRight}
+            </button>
+          </div>
+        </div>
     </>
   );
 };

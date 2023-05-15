@@ -86,7 +86,7 @@ h2{
 }
 
 h2:first-of-type{
-    color: rgb(87, 158, 252);
+    color: rgb(37, 124, 238);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -169,4 +169,28 @@ h2:first-of-type{
     height: 30px;
     width: 30px;
     font-size: 25px;
+}
+
+
+@media screen and (max-width:900px){
+    .card{
+        height: 290px;
+        width: 90%;
+    }
+
+    .img img{
+        width: 100%;
+        height: 80%;
+    }
+
+    .origen h6{
+        color: rgb(87, 158, 252);
+        margin: 0;
+        font-size: 20px;
+        grid-area: origin;
+    }
+
+    h2{
+        font-size: 20px;
+    }
 }

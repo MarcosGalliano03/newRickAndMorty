@@ -10,7 +10,7 @@
 .App.home {
    background-image:url(./components/assets/gifForm.gif) ;
    background-position: center;
-   background-size: contain;
+   background-size: cover;
    background-color: black;
 }
 

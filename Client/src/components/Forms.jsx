@@ -49,6 +49,7 @@ export default function Form(props) {
               name="email"
               value={userData.email}
               onChange={handleChange}
+              placeholder="Email"
             />
             {errors.email && <p className={estilos.error}>{errors.email}</p>}
 
@@ -59,6 +60,7 @@ export default function Form(props) {
               name="password"
               value={userData.password}
               onChange={handleChange}
+              placeholder="Password"
             />
             {errors.password && (
               <p className={estilos.error}>{errors.password}</p>

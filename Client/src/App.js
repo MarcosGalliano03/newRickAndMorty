@@ -40,9 +40,7 @@ function App() {
 
   async function onSearch(id) {
     try {
-      const result = await axios(
-        `http://localhost:3001/rickandmorty/character/${id}`
-      ).then(({ data }) => {
+      await axios(`http://localhost:3001/rickandmorty/character/${id}`).then(({ data }) => {
         const char = characters?.find((e) => e.id === Number(data.id));
         if (char) {
           alert("Already in the list");

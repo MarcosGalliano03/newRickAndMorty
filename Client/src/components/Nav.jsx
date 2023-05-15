@@ -25,14 +25,14 @@ export default function Nav(props) {
           <li>
             <Link to="/favorites">
               <button>
-                <h4>Favorites</h4>
+                <h3>Liked</h3>
               </button>
             </Link>
           </li>
           <li>
             <Link to="/all">
               <button>
-                <h4>All Chars</h4>
+                <h3>All Chars</h3>
               </button>
             </Link>
           </li>
