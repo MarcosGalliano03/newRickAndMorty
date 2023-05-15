@@ -52,10 +52,8 @@ const AllChars = (props) => {
   const handleOrder = () => {
     if (alfabetica) {
       setAlfabetica(false);
-      console.log(alfabetica);
     } else {
       setAlfabetica(true);
-      console.log(alfabetica);
     }
   };
 
